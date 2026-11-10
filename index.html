@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pheinix Gym</title>
+    <title>Phoenix Gym</title>
     <!-- Font Awesome CDN icons ke liye -->
     <link
       rel="stylesheet"
@@ -11,7 +11,6 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
@@ -20,22 +19,21 @@
   </head>
   <body>
     <!-- Main Navigation Header -->
-
     <div class="header-wrapper">
       <header class="main-header">
-        <a href="#" class="logo">
+        <a href="#home" class="logo">
           <img src="images/gym logo.png" alt="Phoenix Gym Logo" />
         </a>
 
         <nav class="nav-links">
           <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Programs</a></li>
-            <li><a href="#">Trainers</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#trainers">Trainers</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
 
@@ -45,11 +43,10 @@
         </div>
       </header>
     </div>
-    <!-- this is the hero section -->
-    <section class="hero">
-      <!-- Dark Background Overlay -->
-      <div class="hero-overlay"></div>
 
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
       <div class="hero-container">
         <!-- LEFT COLUMN: Content -->
         <div class="hero-content">
@@ -64,16 +61,15 @@
             version of yourself.
           </p>
           <div class="hero-btns">
-            <a href="#" class="btn btn-gold">JOIN NOW &rarr;</a>
-            <a href="#" class="btn btn-outline">VIEW PLANS</a>
+            <a href="#" class="btn btn-gold btn-join">JOIN NOW &rarr;</a>
+            <a href="#programs" class="btn btn-outline">VIEW PLANS</a>
           </div>
         </div>
 
-        <!-- RIGHT COLUMN: Slider With 360° Rotating Gold Beam Border -->
+        <!-- RIGHT COLUMN: Slider -->
         <div class="hero-slider-wrapper">
           <div class="hero-slider-beam-border">
             <div class="hero-slider">
-              <!-- 6 Radios for Slides -->
               <input type="radio" name="hero-slide" id="h-slide1" checked />
               <input type="radio" name="hero-slide" id="h-slide2" />
               <input type="radio" name="hero-slide" id="h-slide3" />
@@ -81,59 +77,33 @@
               <input type="radio" name="hero-slide" id="h-slide5" />
               <input type="radio" name="hero-slide" id="h-slide6" />
 
-              <!-- Slides Track (600% Width for 6 Slides) -->
               <div class="slider-track">
-                <!-- Slide 1 -->
                 <div class="slide">
-                  <img
-                    src="images/images1781513642-2zzfyeqbsahz5jyzopll (1).jpeg"
-                    alt="Hardcore Strength"
-                  />
+                  <img src="images/images1781513642-2zzfyeqbsahz5jyzopll (1).jpeg" alt="Hardcore Strength" />
                   <div class="slide-caption">HARDCORE STRENGTH</div>
                 </div>
-                <!-- Slide 2 -->
                 <div class="slide">
-                  <img
-                    src="images/images1781513684-q9xvi0nzsgcy9rglvcnh.jpeg"
-                    alt="Premium Equipment"
-                  />
+                  <img src="images/images1781513684-q9xvi0nzsgcy9rglvcnh.jpeg" alt="Premium Equipment" />
                   <div class="slide-caption">PREMIUM EQUIPMENT</div>
                 </div>
-                <!-- Slide 3 -->
                 <div class="slide">
-                  <img
-                    src="images/images1781513710-afveioisrxagjvwylybf.jpeg"
-                    alt="Expert Coaching"
-                  />
+                  <img src="images/images1781513710-afveioisrxagjvwylybf.jpeg" alt="Expert Coaching" />
                   <div class="slide-caption">EXPERT COACHING</div>
                 </div>
-                <!-- Slide 4 -->
                 <div class="slide">
-                  <img
-                    src="images/images1781513760-gg4fxjq0epbpnjqdtq3z.jpeg"
-                    alt="High Intensity Cardio"
-                  />
+                  <img src="images/images1781513760-gg4fxjq0epbpnjqdtq3z.jpeg" alt="High Intensity Cardio" />
                   <div class="slide-caption">INTENSE CARDIO ZONE</div>
                 </div>
-                <!-- Slide 5 -->
                 <div class="slide">
-                  <img
-                    src="images/images1781513784-kuflksg7vw9rvroqmlfh (1).jpeg"
-                    alt="Crossfit Arena"
-                  />
+                  <img src="images/images1781513784-kuflksg7vw9rvroqmlfh (1).jpeg" alt="Crossfit Arena" />
                   <div class="slide-caption">CROSSFIT & POWER</div>
                 </div>
-                <!-- Slide 6 (Added to match 6 radios) -->
                 <div class="slide">
-                  <img
-                    src="images/images1781513642-2zzfyeqbsahz5jyzopll (1).jpeg"
-                    alt="Athletic Recovery"
-                  />
+                  <img src="images/images1781513642-2zzfyeqbsahz5jyzopll (1).jpeg" alt="Athletic Recovery" />
                   <div class="slide-caption">ELITE RECOVERY & ZONE</div>
                 </div>
               </div>
 
-              <!-- Slider Navigation Dots (Corrected 'for' attributes) -->
               <div class="slider-dots">
                 <label for="h-slide1" class="s-dot dot-1"></label>
                 <label for="h-slide2" class="s-dot dot-2"></label>
@@ -147,130 +117,85 @@
         </div>
       </div>
     </section>
-    <!-- sec-01 -->
+
+    <!-- Features Strip -->
     <section class="features-strip">
-      <!-- Feature 1 -->
       <div class="feature-item">
-        <div class="feature-icon">
-          <i class="fa-solid fa-dumbbell"></i>
-        </div>
+        <div class="feature-icon"><i class="fa-solid fa-dumbbell"></i></div>
         <div class="feature-text">
           <h4>MODERN EQUIPMENT</h4>
           <p>Top-class fitness gear</p>
         </div>
       </div>
-
-      <!-- Divider Line -->
       <div class="divider"></div>
-
-      <!-- Feature 2 -->
       <div class="feature-item">
-        <div class="feature-icon">
-          <i class="fa-solid fa-user-ninja"></i>
-        </div>
+        <div class="feature-icon"><i class="fa-solid fa-user-ninja"></i></div>
         <div class="feature-text">
           <h4>EXPERT TRAINERS</h4>
           <p>Guidance at every step</p>
         </div>
       </div>
-
-      <!-- Divider Line -->
       <div class="divider"></div>
-
-      <!-- Feature 3 -->
       <div class="feature-item">
-        <div class="feature-icon">
-          <i class="fa-solid fa-heart-pulse"></i>
-        </div>
+        <div class="feature-icon"><i class="fa-solid fa-heart-pulse"></i></div>
         <div class="feature-text">
           <h4>PERSONALIZED PLANS</h4>
           <p>For your goals</p>
         </div>
       </div>
-
-      <!-- Divider Line -->
       <div class="divider"></div>
-
-      <!-- Feature 4 -->
       <div class="feature-item">
-        <div class="feature-icon">
-          <i class="fa-solid fa-users"></i>
-        </div>
+        <div class="feature-icon"><i class="fa-solid fa-users"></i></div>
         <div class="feature-text">
           <h4>SUPPORTIVE COMMUNITY</h4>
           <p>Stronger together</p>
         </div>
       </div>
     </section>
-    <!-- sec-02 -->
-    <section class="programs-section">
-      <!-- Section Header -->
+
+    <!-- Programs Section -->
+    <section class="programs-section" id="programs">
       <div class="section-header">
         <h2 class="section-title">OUR PROGRAMS</h2>
         <p class="section-subtitle">Find the right program for your goals</p>
       </div>
-
-      <!-- Programs Grid Container -->
       <div class="programs-grid">
-        <!-- Card 1 -->
         <div class="program-card">
           <img src="strength.jpg" alt="Strength Training" class="card-bg" />
           <div class="card-overlay"></div>
           <div class="card-content">
             <h3>STRENGTH TRAINING</h3>
-            <a href="#" class="card-link">
-              <span>Build power and endurance</span>
-              <span class="arrow">&rarr;</span>
-            </a>
+            <a href="#" class="card-link"><span>Build power and endurance</span><span class="arrow">&rarr;</span></a>
           </div>
         </div>
-
-        <!-- Card 2 -->
         <div class="program-card">
           <img src="weight-loss.jpg" alt="Weight Loss" class="card-bg" />
           <div class="card-overlay"></div>
           <div class="card-content">
             <h3>WEIGHT LOSS</h3>
-            <a href="#" class="card-link">
-              <span>Burn fat, Gain confidence</span>
-              <span class="arrow">&rarr;</span>
-            </a>
+            <a href="#" class="card-link"><span>Burn fat, Gain confidence</span><span class="arrow">&rarr;</span></a>
           </div>
         </div>
-
-        <!-- Card 3 -->
         <div class="program-card">
-          <img
-            src="muscle-building.jpg"
-            alt="Muscle Building"
-            class="card-bg"
-          />
+          <img src="muscle-building.jpg" alt="Muscle Building" class="card-bg" />
           <div class="card-overlay"></div>
           <div class="card-content">
             <h3>MUSCLE BUILDING</h3>
-            <a href="#" class="card-link">
-              <span>Grow stronger, get bigger</span>
-              <span class="arrow">&rarr;</span>
-            </a>
+            <a href="#" class="card-link"><span>Grow stronger, get bigger</span><span class="arrow">&rarr;</span></a>
           </div>
         </div>
-
-        <!-- Card 4 -->
         <div class="program-card">
           <img src="functional.jpg" alt="Functional Fitness" class="card-bg" />
           <div class="card-overlay"></div>
           <div class="card-content">
             <h3>FUNCTIONAL FITNESS</h3>
-            <a href="#" class="card-link">
-              <span>Move better, Live better</span>
-              <span class="arrow">&rarr;</span>
-            </a>
+            <a href="#" class="card-link"><span>Move better, Live better</span><span class="arrow">&rarr;</span></a>
           </div>
         </div>
       </div>
     </section>
-    <!-- sec-03 -->
-    <!-- OUR LEGACY SECTION -->
+
+    <!-- Our Legacy Section -->
     <section class="legacy-section" id="about">
       <div class="legacy-container">
         <div class="section-heading">
@@ -278,751 +203,370 @@
           <h2>Our Legacy</h2>
           <div class="heading-line"></div>
         </div>
-
         <div class="legacy-content">
-          <!-- Video -->
           <div class="legacy-video">
             <div class="video-wrapper">
-              <iframe
-                src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
-                title="Phoenix Gym Legacy"
-                frameborder="0"
-                allow="
-                  accelerometer;
-                  autoplay;
-                  clipboard-write;
-                  encrypted-media;
-                  gyroscope;
-                  picture-in-picture;
-                "
-                allowfullscreen
-              >
-              </iframe>
+              <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Phoenix Gym Legacy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
-
-          <!-- Content -->
           <div class="legacy-text">
-            <p>
-              <strong>PHOENIX GYM</strong> is built on a simple belief: fitness
-              is not just about changing your body — it is about building
-              strength, discipline, confidence, and character.
-            </p>
-
-            <p>
-              Inspired by the powerful symbolism of the phoenix, our journey
-              represents
-              <strong>rebirth, resilience, and transformation.</strong> Every
-              workout is an opportunity to rise stronger, push beyond your
-              limits, and become a better version of yourself.
-            </p>
-
-            <p>
-              From beginners taking their first step into fitness to experienced
-              athletes chasing their next milestone, Phoenix Gym provides a
-              motivating environment where everyone can train with purpose.
-            </p>
-
-            <p>
-              With modern equipment, dedicated trainers, structured programs,
-              and a strong fitness community, we are creating more than a gym.
-              We are building a place where
-              <strong
-                >strength is forged, limits are challenged, and champions
-                rise.</strong
-              >
-            </p>
-
-            <a href="#programs" class="legacy-btn">
-              EXPLORE OUR PROGRAMS
-              <span>→</span>
-            </a>
+            <p><strong>PHOENIX GYM</strong> is built on a simple belief: fitness is not just about changing your body — it is about building strength, discipline, confidence, and character.</p>
+            <p>Inspired by the powerful symbolism of the phoenix, our journey represents <strong>rebirth, resilience, and transformation.</strong> Every workout is an opportunity to rise stronger, push beyond your limits, and become a better version of yourself.</p>
+            <p>From beginners taking their first step into fitness to experienced athletes chasing their next milestone, Phoenix Gym provides a motivating environment where everyone can train with purpose.</p>
+            <p>With modern equipment, dedicated trainers, structured programs, and a strong fitness community, we are creating more than a gym. We are building a place where <strong>strength is forged, limits are challenged, and champions rise.</strong></p>
+            <a href="#programs" class="legacy-btn">EXPLORE OUR PROGRAMS <span>→</span></a>
           </div>
         </div>
       </div>
     </section>
-    <!-- sec-05 -->
+
     <!-- Business Verticals Section -->
-    <section class="verticals-section">
+    <section class="verticals-section" id="pricing">
       <div class="verticals-container">
-        <!-- Section Header -->
         <div class="section-header">
           <h2 class="section-title">OUR BUSINESS VERTICALS</h2>
-          <p class="section-subtitle">
-            Phoenix Gym business comprises of 2 verticals – Phoenix Gyms & PFA
-            (Phoenix Fitness Academy)
-          </p>
+          <p class="section-subtitle">Phoenix Gym business comprises of 2 verticals – Phoenix Gyms & PFA (Phoenix Fitness Academy)</p>
         </div>
-
-        <!-- Verticals Cards Grid -->
         <div class="verticals-grid">
-          <!-- Vertical Card 1 -->
           <div class="vertical-card">
-            <div class="icon-wrapper">
-              <i class="fa-solid fa-dumbbell"></i>
-            </div>
+            <div class="icon-wrapper"><i class="fa-solid fa-dumbbell"></i></div>
             <h3 class="card-title">Phoenix Gyms</h3>
-            <p class="card-description">
-              We are a premier fitness destination equipped with world-class
-              facilities, expert personal trainers, and a thriving community
-              dedicated to helping you unlock your full potential.
-            </p>
+            <p class="card-description">We are a premier fitness destination equipped with world-class facilities, expert personal trainers, and a thriving community dedicated to helping you unlock your full potential.</p>
           </div>
-
-          <!-- Vertical Card 2 -->
           <div class="vertical-card">
-            <div class="icon-wrapper">
-              <i class="fa-solid fa-graduation-cap"></i>
-            </div>
+            <div class="icon-wrapper"><i class="fa-solid fa-graduation-cap"></i></div>
             <h3 class="card-title">PFA (Phoenix Fitness Academy)</h3>
-            <p class="card-description">
-              Established to train the next generation of fitness professionals.
-              PFA offers certified fitness courses, producing top-tier personal
-              trainers and certified health coaches.
-            </p>
+            <p class="card-description">Established to train the next generation of fitness professionals. PFA offers certified fitness courses, producing top-tier personal trainers and certified health coaches.</p>
           </div>
         </div>
       </div>
     </section>
-    <!-- sec-06 -->
-    <!-- Wrapper for Free Trial & Sub-brands Section -->
-    <div class="phoenix-promo-section">
-      <!-- Top Banner Section -->
-      <section class="trial-banner">
-        <!-- Left Image Column -->
-        <div class="banner-col left-col">
-          <img
-            src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&q=80&w=800"
-            alt="Athlete Training"
-            class="banner-img"
-          />
-        </div>
 
-        <!-- Center CTA Column -->
+    <!-- Free Trial Banner & Brands -->
+    <div class="phoenix-promo-section">
+      <section class="trial-banner">
+        <div class="banner-col left-col">
+          <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&q=80&w=800" alt="Athlete Training" class="banner-img" />
+        </div>
         <div class="banner-col center-col">
           <div class="cta-box">
             <h2 class="cta-title">BOOK YOUR FREE TRIAL</h2>
-            <p class="cta-subtitle">
-              Start Your Fitness Journey At Phoenix Gym Today
-            </p>
-            <a href="#" class="cta-btn">SIGN ME UP</a>
+            <p class="cta-subtitle">Start Your Fitness Journey At Phoenix Gym Today</p>
+            <a href="#" class="cta-btn btn-trial">SIGN ME UP</a>
           </div>
         </div>
-
-        <!-- Right Image Column -->
         <div class="banner-col right-col">
-          <img
-            src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=800"
-            alt="Gym Reception & Consultation"
-            class="banner-img"
-          />
+          <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=800" alt="Gym Reception & Consultation" class="banner-img" />
         </div>
       </section>
 
-      <!-- Bottom Logos Section -->
-      <section class="brands-section">
+      <section class="brands-section" id="gallery">
         <div class="brands-container">
           <div class="brand-item">
             <i class="fa-solid fa-fire-flame-curved brand-icon"></i>
             <span class="brand-name">PHOENIX GYM</span>
           </div>
-
           <div class="brand-item">
             <i class="fa-solid fa-bolt brand-icon"></i>
             <span class="brand-name">PHOENIX EXPRESS</span>
           </div>
-
           <div class="brand-item">
             <i class="fa-solid fa-heart-pulse brand-icon"></i>
             <span class="brand-name">PHOENIX ACTIV</span>
           </div>
         </div>
       </section>
-      <!-- sec-07 -->
-      <!-- Our Programs Section -->
-      <section class="programs-section">
-        <div class="programs-container">
-          <!-- Section Header -->
-          <div class="section-header">
-            <h2 class="section-title">OUR PROGRAMS</h2>
-            <p class="section-description">
-              The diverse range of programs, from group exercises and corporate
-              training to personalized training, caters to varying fitness
-              levels and goals. Members get variety and the option of
-              customization as Phoenix Gym offers a diversity of exercise
-              options and specialized programs, allowing members to choose
-              activities that align with their interests and fitness objectives.
-              Personalized training programs ensure workouts are tailored to
-              individual needs, maximizing results. Participating in group
-              exercises fosters a sense of community among members, providing
-              social support and encouragement, which can be instrumental in
-              maintaining consistency in their fitness journey.
-            </p>
-          </div>
-
-          <!-- Content Block (Image + Text Grid) -->
-          <div class="program-content-grid">
-            <!-- Left Image Column -->
-            <div class="program-image-wrapper">
-              <img
-                src="[https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=800](https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=800)"
-                alt="Corporate Fitness Consultation"
-                class="program-img"
-              />
-              <div class="image-overlay-glow"></div>
-            </div>
-
-            <!-- Right Text Column -->
-            <div class="program-text-wrapper">
-              <h3 class="program-subheading">Corporate Membership</h3>
-              <p class="program-subtext">
-                Don't have time to go to the gym? We get the gym to you. Phoenix
-                Gym offers
-                <strong>corporate membership programs</strong> tailored for
-                companies looking to promote employee wellness and fitness.
-                These programs are designed to encourage a healthier workforce
-                by providing BMI screening, diet and nutrition counselling,
-                fitness activities, and seminars for building a healthier
-                lifestyle.
-              </p>
-              <a href="#" class="program-btn">EXPLORE CORPORATE PLANS</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- sec-08 -->
-      <!-- Personal Training Section -->
-      <section class="personal-training-section">
-        <div class="pt-container">
-          <!-- Text Column (Left Side) -->
-          <div class="pt-text-col">
-            <h2 class="pt-title">Personal Training</h2>
-            <p class="pt-description">
-              Phoenix Gym is known for its highly certified personal trainers
-              and extraordinary 1-on-1 personal training. For individuals
-              seeking serious goal-oriented fitness, personalized guidance,
-              motivation, and specialized workout plans, Phoenix Gym personal
-              training programs are designed specifically for you.
-            </p>
-            <a href="#" class="pt-btn">BOOK A TRAINER</a>
-          </div>
-
-          <!-- Image Column (Right Side) -->
-          <div class="pt-image-col">
-            <div class="image-frame">
-              <img
-                src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=800"
-                alt="Personal Training Session"
-                class="pt-img"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- sec-09 -->
-
-      <!doctype html>
-      <html lang="en">
-        <head>
-          <meta charset="UTF-8" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          />
-          <title>Phoenix Gym - Group Program</title>
-
-          <!-- Google Fonts -->
-          <link
-            href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap"
-            rel="stylesheet"
-          />
-
-          <link rel="stylesheet" href="style.css" />
-        </head>
-        <body>
-          <!-- Group Program Section -->
-          <section class="group-program-section">
-            <div class="gp-container">
-              <!-- Image Column (Left Side) -->
-              <div class="gp-image-col">
-                <div class="image-hover-frame">
-                  <img
-                    src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&q=80&w=800"
-                    alt="Group Exercise Class"
-                    class="gp-img"
-                  />
-                </div>
-              </div>
-
-              <!-- Text Column (Right Side) -->
-              <div class="gp-text-col">
-                <h2 class="gp-title">Group Program</h2>
-                <p class="gp-description">
-                  Phoenix Gym provides a variety of group fitness programs such
-                  as dance fitness, yoga, HIIT, and much more tailored to cater
-                  to diverse fitness preferences and goals. These group programs
-                  offer a supportive environment and a sense of community while
-                  engaging participants in fun and effective workouts.
-                </p>
-                <a href="#" class="gp-btn">JOIN A CLASS</a>
-              </div>
-            </div>
-          </section>
-          <!-- sec-11 -->
-          <!-- Fitness Institute Section -->
-          <section class="institute-section">
-            <div class="institute-container">
-              <!-- Section Header -->
-              <div class="institute-header">
-                <h2 class="institute-title">Phoenix Fitness Institute</h2>
-                <p class="institute-tagline">
-                  Become a Certified Fitness Professional Today
-                </p>
-                <p class="institute-subtagline">
-                  Physical Activity Can Improve Your Health
-                </p>
-              </div>
-
-              <!-- 4 Cards Grid -->
-              <div class="courses-grid">
-                <!-- Card 1 -->
-                <div class="course-card">
-                  <div class="card-image-box">
-                    <img
-                      src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&q=80&w=500"
-                      alt="Online Personal Training"
-                      class="course-img"
-                    />
-                    <div class="yellow-label">
-                      ONLINE PERSONAL TRAINING COURSE
-                    </div>
-                  </div>
-                  <div class="card-footer">
-                    <h4 class="course-name">PFI Online</h4>
-                  </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="course-card">
-                  <div class="card-image-box">
-                    <img
-                      src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=500"
-                      alt="Offline Personal Training"
-                      class="course-img"
-                    />
-                    <div class="yellow-label">
-                      OFFLINE PERSONAL TRAINING COURSE
-                    </div>
-                  </div>
-                  <div class="card-footer">
-                    <h4 class="course-name">PFI Offline</h4>
-                  </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="course-card">
-                  <div class="card-image-box">
-                    <img
-                      src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&q=80&w=500"
-                      alt="ACE Certification"
-                      class="course-img"
-                    />
-                    <div class="yellow-label">ACE CERTIFICATION</div>
-                  </div>
-                  <div class="card-footer">
-                    <h4 class="course-name">ACE</h4>
-                  </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="course-card">
-                  <div class="card-image-box">
-                    <img
-                      src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=500"
-                      alt="Short Courses"
-                      class="course-img"
-                    />
-                    <div class="yellow-label">SHORT COURSES</div>
-                  </div>
-                  <div class="card-footer">
-                    <h4 class="course-name">Short Courses</h4>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Bottom Know More Button -->
-              <div class="btn-wrapper">
-                <a href="#" class="know-more-btn">Know More</a>
-              </div>
-            </div>
-          </section>
-          <!-- sec-12 -->
-          <!-- Testimonials Section -->
-          <section class="testimonials-section">
-            <!-- Background Image Left Side -->
-            <div class="bg-athlete left-athlete">
-              <img
-                src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&q=80&w=800"
-                alt="Female Athlete"
-              />
-            </div>
-
-            <!-- Background Image Right Side -->
-            <div class="bg-athlete right-athlete">
-              <img
-                src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=800"
-                alt="Male Athlete"
-              />
-            </div>
-
-            <div class="testimonials-container">
-              <h2 class="section-title">TESTIMONIALS</h2>
-
-              <!-- Pure CSS Slider Controls (Hidden Radio Inputs) -->
-              <div class="testimonial-slider">
-                <input type="radio" name="slider" id="slide1" checked />
-                <input type="radio" name="slider" id="slide2" />
-                <input type="radio" name="slider" id="slide3" />
-                <input type="radio" name="slider" id="slide4" />
-                <input type="radio" name="slider" id="slide5" />
-                <input type="radio" name="slider" id="slide6" />
-
-                <!-- Slides Wrapper -->
-                <div class="slides-wrapper">
-                  <!-- Slide 1 -->
-                  <div class="slide slide-1">
-                    <div class="quote-icon">
-                      <i class="fa-solid fa-quote-left"></i>
-                    </div>
-                    <p class="review-text">
-                      It's a very nice gym with world top class equipment of
-                      Life Fitness and Hammer Strength, and people surrounding
-                      is also good, and staff of this branch is very kind, they
-                      help members very well and all the trainers are certified
-                      with good knowledge of teaching as well. Good place to
-                      achieve your goals.
-                    </p>
-                    <h4 class="member-name">Mayur Abnave</h4>
-                  </div>
-
-                  <!-- Slide 2 -->
-                  <div class="slide slide-2">
-                    <div class="quote-icon">
-                      <i class="fa-solid fa-quote-left"></i>
-                    </div>
-                    <p class="review-text">
-                      Joining Phoenix Gym was the best decision for my
-                      transformation. The personal training program completely
-                      reshaped my fitness routine with customized nutrition
-                      plans and intense workouts.
-                    </p>
-                    <h4 class="member-name">Rohan Sharma</h4>
-                  </div>
-
-                  <!-- Slide 3 -->
-                  <div class="slide slide-3">
-                    <div class="quote-icon">
-                      <i class="fa-solid fa-quote-left"></i>
-                    </div>
-                    <p class="review-text">
-                      Great atmosphere, clean facilities, and high-energy group
-                      fitness classes! The trainers push you to your limits
-                      while ensuring proper form and safety. Highly recommended!
-                    </p>
-                    <h4 class="member-name">Ananya Verma</h4>
-                  </div>
-                </div>
-
-                <!-- Slider Pagination Dots -->
-                <div class="slider-dots">
-                  <label for="slide1" class="dot dot-1"></label>
-                  <label for="slide2" class="dot dot-2"></label>
-                  <label for="slide3" class="dot dot-3"></label>
-                  <label for="slide3" class="dot dot-4"></label>
-                  <label for="slide3" class="dot dot-5"></label>
-                  <label for="slide3" class="dot dot-6"></label>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- sec-13 form -->
-          <!-- Get In Touch Section -->
-          <section class="contact-section">
-            <div class="contact-container">
-              <!-- Left Side: Form Container -->
-              <div class="form-wrapper">
-                <!-- Header Strip -->
-                <div class="form-header">
-                  <h2 class="form-title">GET IN TOUCH WITH US</h2>
-                </div>
-
-                <!-- Subtitle Box -->
-                <div class="form-subtitle">
-                  Speak with our experts to share your specific requirements,
-                  which can provide customized solutions catering to your needs.
-                </div>
-
-                <!-- Form Body -->
-                <form class="contact-form">
-                  <div class="input-group">
-                    <select class="form-control" required>
-                      <option value="" disabled selected>
-                        SELECT A DEPARTMENT
-                      </option>
-                      <option value="gym">Gym Membership</option>
-                      <option value="pt">Personal Training</option>
-                      <option value="corporate">Corporate Inquiry</option>
-                      <option value="academy">Fitness Academy (PFA)</option>
-                    </select>
-                  </div>
-
-                  <div class="input-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Enter Name"
-                      required
-                    />
-                  </div>
-
-                  <div class="input-group">
-                    <input
-                      type="email"
-                      class="form-control"
-                      placeholder="Enter Email"
-                      required
-                    />
-                  </div>
-
-                  <div class="input-group">
-                    <input
-                      type="tel"
-                      class="form-control"
-                      placeholder="Enter Phone"
-                      required
-                    />
-                  </div>
-
-                  <div class="input-group">
-                    <select class="form-control" required>
-                      <option value="" disabled selected>Select a State</option>
-                      <option value="delhi">Delhi</option>
-                      <option value="maharashtra">Maharashtra</option>
-                      <option value="karnataka">Karnataka</option>
-                    </select>
-                  </div>
-
-                  <div class="input-group">
-                    <select class="form-control" required>
-                      <option value="" disabled selected>Select City</option>
-                      <option value="delhi-ncr">New Delhi</option>
-                      <option value="mumbai">Mumbai</option>
-                      <option value="bangalore">Bangalore</option>
-                    </select>
-                  </div>
-
-                  <div class="input-group">
-                    <select class="form-control" required>
-                      <option value="" disabled selected>Select Gym</option>
-                      <option value="phoenix-central">
-                        Phoenix Gym - Central
-                      </option>
-                      <option value="phoenix-express">
-                        Phoenix Express - South
-                      </option>
-                    </select>
-                  </div>
-
-                  <div class="input-group">
-                    <textarea
-                      class="form-control textarea-control"
-                      rows="4"
-                      placeholder="Enter Message"
-                    ></textarea>
-                  </div>
-
-                  <!-- Dummy Captcha Placeholder -->
-                  <div class="captcha-box">
-                    <div class="captcha-left">
-                      <input type="checkbox" id="captcha-check" />
-                      <label for="captcha-check">I'm not a robot</label>
-                    </div>
-                    <div class="captcha-right">
-                      <i class="fa-solid fa-rotate-right"></i>
-                      <span>reCAPTCHA</span>
-                    </div>
-                  </div>
-
-                  <!-- Submit Button -->
-                  <button type="submit" class="submit-btn">SUBMIT</button>
-                </form>
-              </div>
-
-              <!-- Right Side: Trainers Image -->
-              <div class="trainers-image-col">
-                <img
-                  src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=800"
-                  alt="Phoenix Gym Team & Trainers"
-                  class="trainers-img"
-                />
-              </div>
-            </div>
-          </section>
-          <!-- sec-15 -->
-          <!-- Call to Action Banner Section -->
-          <section class="cta-banner-section">
-            <div class="cta-banner-container">
-              <!-- Text Area -->
-              <div class="cta-text-wrapper">
-                <h2 class="cta-heading">Buy a Phoenix Gym Membership Today.</h2>
-                <p class="cta-subheading">Start Your Fitness Journey Today!</p>
-              </div>
-
-              <!-- Button Area -->
-              <div class="cta-btn-wrapper">
-                <a href="#" class="cta-banner-btn">Book Your Free Trial</a>
-              </div>
-            </div>
-          </section>
-          <!-- footer section -->
-          <!-- Main Footer Section -->
-          <footer class="footer-section">
-            <!-- Background Overlay with Texture/Athletes -->
-            <div class="footer-bg-overlay"></div>
-
-            <div class="footer-container">
-              <!-- Column 1 & 2: Quick Links Grid -->
-              <div class="footer-col links-col">
-                <h3 class="footer-heading">QUICK LINKS</h3>
-                <div class="links-wrapper">
-                  <ul class="footer-links">
-                    <li><a href="#">Gym Locator</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Become an Influencer with Us</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Press Room</a></li>
-                    <li><a href="#">Our Events</a></li>
-                    <li><a href="#">Group Program</a></li>
-                  </ul>
-                  <ul class="footer-links">
-                    <li><a href="#">Blogs</a></li>
-                    <li><a href="#">Corporate Wellness Program</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Franchise</a></li>
-                    <li><a href="#">PFI Academy</a></li>
-                    <li><a href="#">Advertise with us</a></li>
-                    <li><a href="#">Buy Membership Now</a></li>
-                    <li><a href="#">Sitemap</a></li>
-                  </ul>
-                </div>
-              </div>
-
-              <!-- Column 3: Newsletter -->
-              <div class="footer-col newsletter-col">
-                <h3 class="footer-heading">NEWS LETTER</h3>
-                <p class="newsletter-sub">
-                  sign up for our mailing list to get latest updates and offers
-                </p>
-
-                <form class="newsletter-form">
-                  <input
-                    type="email"
-                    class="newsletter-input"
-                    placeholder="Enter Email"
-                    required
-                  />
-
-                  <!-- Dummy Captcha Box -->
-                  <div class="captcha-box">
-                    <div class="captcha-left">
-                      <input type="checkbox" id="footer-captcha" />
-                      <label for="footer-captcha">I'm not a robot</label>
-                    </div>
-                    <div class="captcha-right">
-                      <i class="fa-solid fa-rotate-right"></i>
-                      <span>reCAPTCHA</span>
-                    </div>
-                  </div>
-
-                  <button type="submit" class="subscribe-btn">
-                    SUBSCRIBE NOW
-                  </button>
-                </form>
-
-                <!-- Social Media Icons -->
-                <div class="social-icons">
-                  <a href="#" class="social-btn"
-                    ><i class="fa-brands fa-facebook-f"></i
-                  ></a>
-                  <a href="#" class="social-btn"
-                    ><i class="fa-brands fa-twitter"></i
-                  ></a>
-                  <a href="#" class="social-btn"
-                    ><i class="fa-brands fa-instagram"></i
-                  ></a>
-                  <a href="#" class="social-btn"
-                    ><i class="fa-brands fa-youtube"></i
-                  ></a>
-                  <a href="#" class="social-btn"
-                    ><i class="fa-brands fa-linkedin-in"></i
-                  ></a>
-                </div>
-              </div>
-
-              <!-- Column 4: Latest Blog -->
-              <div class="footer-col blog-col">
-                <h3 class="footer-heading">LATEST BLOG</h3>
-                <ul class="blog-links">
-                  <li>
-                    <a href="#"
-                      >The Science of the "Second Half": Why Recovery Is the
-                      Real Competitive Edge in Professional Sports</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#"
-                      >Evidence-Based Approaches to Improve Nutrition Without
-                      Calorie Counting</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#">Phoenix Gym Shillong Blog</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Bottom Copyright & Legal Strip -->
-            <div class="bottom-footer-bar">
-              <div class="bottom-container">
-                <div class="copyright-row">
-                  <p>©2026 Phoenix Gym.in All Rights Reserved.</p>
-                  <div class="legal-links">
-                    <a href="#">Terms & Conditions</a>
-                    <span>|</span>
-                    <a href="#">Privacy Policy</a>
-                  </div>
-                </div>
-
-                <!-- Related Searches Keywords -->
-                <div class="related-searches">
-                  <span><strong>Related Searches:</strong></span>
-                  <span
-                    >Gym Near Me, Phoenix Gym Mumbai Bandra, Corporate Wellness
-                    Program, Personal Training Program, Gym Memberships Near Me,
-                    Fitness Near Me, Phoenix Gym Near Me, Personal Training Near
-                    Me, Gyms in Pune Kalyani Nagar, Gyms in Bengaluru RR Nagar,
-                    Gyms in Delhi Greater Kailash, Gym Workout Routine, Weight
-                    Training for Weight Loss</span
-                  >
-                </div>
-              </div>
-            </div>
-          </footer>
-          <script src="script.js"></script>
-        </body>
-      </html>
     </div>
+
+    <!-- Personal Training Section -->
+    <section class="personal-training-section" id="trainers">
+      <div class="pt-container">
+        <div class="pt-text-col">
+          <h2 class="pt-title">Personal Training</h2>
+          <p class="pt-description">
+            Phoenix Gym is known for its highly certified personal trainers and extraordinary 1-on-1 personal training. For individuals seeking serious goal-oriented fitness, personalized guidance, motivation, and specialized workout plans, Phoenix Gym personal training programs are designed specifically for you.
+          </p>
+          <a href="#" class="pt-btn btn-trial">BOOK A TRAINER</a>
+        </div>
+        <div class="pt-image-col">
+          <div class="image-frame">
+            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=800" alt="Personal Training Session" class="pt-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Group Program Section -->
+    <section class="group-program-section">
+      <div class="gp-container">
+        <div class="gp-image-col">
+          <div class="image-hover-frame">
+            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&q=80&w=800" alt="Group Exercise Class" class="gp-img" />
+          </div>
+        </div>
+        <div class="gp-text-col">
+          <h2 class="gp-title">Group Program</h2>
+          <p class="gp-description">
+            Phoenix Gym provides a variety of group fitness programs such as dance fitness, yoga, HIIT, and much more tailored to cater to diverse fitness preferences and goals. These group programs offer a supportive environment and a sense of community while engaging participants in fun and effective workouts.
+          </p>
+          <a href="#" class="gp-btn btn-join">JOIN A CLASS</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fitness Institute Section -->
+    <section class="institute-section">
+      <div class="institute-container">
+        <div class="institute-header">
+          <h2 class="institute-title">Phoenix Fitness Institute</h2>
+          <p class="institute-tagline">Become a Certified Fitness Professional Today</p>
+          <p class="institute-subtagline">Physical Activity Can Improve Your Health</p>
+        </div>
+        <div class="courses-grid">
+          <div class="course-card">
+            <div class="card-image-box">
+              <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&q=80&w=500" alt="Online Personal Training" class="course-img" />
+              <div class="yellow-label">ONLINE PERSONAL TRAINING COURSE</div>
+            </div>
+            <div class="card-footer"><h4 class="course-name">PFI Online</h4></div>
+          </div>
+          <div class="course-card">
+            <div class="card-image-box">
+              <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&q=80&w=500" alt="Offline Personal Training" class="course-img" />
+              <div class="yellow-label">OFFLINE PERSONAL TRAINING COURSE</div>
+            </div>
+            <div class="card-footer"><h4 class="course-name">PFI Offline</h4></div>
+          </div>
+          <div class="course-card">
+            <div class="card-image-box">
+              <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&q=80&w=500" alt="ACE Certification" class="course-img" />
+              <div class="yellow-label">ACE CERTIFICATION</div>
+            </div>
+            <div class="card-footer"><h4 class="course-name">ACE</h4></div>
+          </div>
+          <div class="course-card">
+            <div class="card-image-box">
+              <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=500" alt="Short Courses" class="course-img" />
+              <div class="yellow-label">SHORT COURSES</div>
+            </div>
+            <div class="card-footer"><h4 class="course-name">Short Courses</h4></div>
+          </div>
+        </div>
+        <div class="btn-wrapper">
+          <a href="#" class="know-more-btn btn-join">Know More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+      <div class="bg-athlete left-athlete"><img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&q=80&w=800" alt="Female Athlete" /></div>
+      <div class="bg-athlete right-athlete"><img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=800" alt="Male Athlete" /></div>
+      <div class="testimonials-container">
+        <h2 class="section-title">TESTIMONIALS</h2>
+        <div class="testimonial-slider">
+          <input type="radio" name="slider" id="slide1" checked />
+          <input type="radio" name="slider" id="slide2" />
+          <input type="radio" name="slider" id="slide3" />
+          
+          <div class="slides-wrapper">
+            <div class="slide slide-1">
+              <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+              <p class="review-text">It's a very nice gym with world top class equipment of Life Fitness and Hammer Strength, and staff is very kind, they help members very well and all trainers are certified.</p>
+              <h4 class="member-name">Mayur Abnave</h4>
+            </div>
+            <div class="slide slide-2">
+              <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+              <p class="review-text">Joining Phoenix Gym was the best decision for my transformation. The personal training program completely reshaped my fitness routine.</p>
+              <h4 class="member-name">Rohan Sharma</h4>
+            </div>
+            <div class="slide slide-3">
+              <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+              <p class="review-text">Great atmosphere, clean facilities, and high-energy group fitness classes! The trainers push you to your limits while ensuring safety.</p>
+              <h4 class="member-name">Ananya Verma</h4>
+            </div>
+          </div>
+          <div class="slider-dots">
+            <label for="slide1" class="dot dot-1"></label>
+            <label for="slide2" class="dot dot-2"></label>
+            <label for="slide3" class="dot dot-3"></label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Get In Touch Section -->
+    <section class="contact-section" id="contact">
+      <div class="contact-container">
+        <div class="form-wrapper">
+          <div class="form-header">
+            <h2 class="form-title">GET IN TOUCH WITH US</h2>
+          </div>
+          <div class="form-subtitle">
+            Speak with our experts to share your specific requirements, which can provide customized solutions catering to your needs.
+          </div>
+          <form class="contact-form">
+            <div class="input-group">
+              <select class="form-control" required>
+                <option value="" disabled selected>SELECT A DEPARTMENT</option>
+                <option value="gym">Gym Membership</option>
+                <option value="pt">Personal Training</option>
+                <option value="corporate">Corporate Inquiry</option>
+                <option value="academy">Fitness Academy (PFA)</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Enter Name" required />
+            </div>
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Enter Email" required />
+            </div>
+            <div class="input-group">
+              <input type="tel" class="form-control" placeholder="Enter Phone" required />
+            </div>
+            <div class="input-group">
+              <select class="form-control" required>
+                <option value="" disabled selected>Select a State</option>
+                <option value="delhi">Delhi</option>
+                <option value="maharashtra">Maharashtra</option>
+                <option value="karnataka">Karnataka</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <select class="form-control" required>
+                <option value="" disabled selected>Select City</option>
+                <option value="delhi-ncr">New Delhi</option>
+                <option value="mumbai">Mumbai</option>
+                <option value="bangalore">Bangalore</option>
+              </select>
+            </div>
+            <button type="submit" class="modal-btn">SUBMIT INQUIRY</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FREE TRIAL MODAL -->
+    <div class="modal-overlay" id="trial-modal">
+      <div class="modal-card">
+        <button class="modal-close" id="close-trial">&times;</button>
+        <h2>BOOK A FREE TRIAL</h2>
+        <p>Experience Phoenix Gym for 1 day completely free!</p>
+        <form id="trial-form">
+          <div class="input-field">
+            <input type="text" placeholder="Full Name" required />
+          </div>
+          <div class="input-field">
+            <input type="tel" placeholder="Phone Number" required />
+          </div>
+          <div class="input-field">
+            <select required>
+              <option value="" disabled selected>Preferred Slot</option>
+              <option value="morning">Morning (6:00 AM - 10:00 AM)</option>
+              <option value="evening">Evening (5:00 PM - 9:00 PM)</option>
+            </select>
+          </div>
+          <button type="submit" class="modal-btn">CLAIM FREE TRIAL</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- JOIN NOW MODAL -->
+    <div class="modal-overlay" id="join-modal">
+      <div class="modal-card">
+        <button class="modal-close" id="close-join">&times;</button>
+        <h2>BECOME A MEMBER</h2>
+        <p>Select your plan & start your fitness journey</p>
+        <form id="join-form">
+          <div class="input-field">
+            <input type="text" placeholder="Full Name" required />
+          </div>
+          <div class="input-field">
+            <input type="email" placeholder="Email Address" required />
+          </div>
+          <div class="input-field">
+            <input type="tel" placeholder="Phone Number" required />
+          </div>
+          <div class="input-field">
+            <select required>
+              <option value="" disabled selected>Select Membership Plan</option>
+              <option value="1month">1 Month - Basic Access</option>
+              <option value="3months">3 Months - Standard Plan</option>
+              <option value="1year">1 Year - Gold VIP Membership</option>
+            </select>
+          </div>
+          <button type="submit" class="modal-btn gold-btn">PROCEED TO JOIN</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+<footer class="footer-section" id="footer">
+  <div class="footer-container">
+    <!-- Col 1: Brand Info -->
+    <div class="footer-col brand-col">
+      <div class="footer-logo">
+        <img src="images/gym logo.png" alt="Phoenix Gym Logo" />
+        <span>PHOENIX GYM</span>
+      </div>
+      <p class="footer-desc">
+        More than just a gym – Phoenix Gym is a community built for those who refuse to settle. Train hard, grow stronger, and rise like a phoenix.
+      </p>
+      <div class="footer-socials">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+
+    <!-- Col 2: Quick Links -->
+    <div class="footer-col links-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#trainers">Trainers</a></li>
+        <li><a href="#pricing">Pricing & Verticals</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Col 3: Programs & Verticals -->
+    <div class="footer-col">
+      <h3>Our Verticals</h3>
+      <ul>
+        <li><a href="#">Phoenix Gyms</a></li>
+        <li><a href="#">Phoenix Fitness Academy (PFA)</a></li>
+        <li><a href="#">Phoenix Express</a></li>
+        <li><a href="#">Phoenix Activ</a></li>
+        <li><a href="#">Online Personal Training</a></li>
+      </ul>
+    </div>
+
+    <!-- Col 4: Newsletter / Contact Info -->
+    <div class="footer-col newsletter-col">
+      <h3>Stay Updated</h3>
+      <p>Subscribe to our newsletter for fitness tips, updates, and exclusive offers.</p>
+      <form class="newsletter-form" id="newsletter-form">
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+      </form>
+      <div class="footer-contact-info">
+        <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+        <p><i class="fa-solid fa-envelope"></i> support@phoenixgym.com</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Copyright Bar -->
+  <div class="footer-bottom">
+    <p>&copy; 2026 Phoenix Gym. All Rights Reserved. Designed with <i class="fa-solid fa-heart" style="color: #d4af37;"></i> by Heena.</p>
+  </div>
+</footer>
+<script type="module" src="script.js"></script>
+   
+    
   </body>
 </html>
